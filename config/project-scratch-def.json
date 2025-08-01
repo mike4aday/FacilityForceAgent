@@ -1,13 +1,16 @@
 {
-  "orgName": "mepstein company",
-  "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "orgName": "FacilityForce Agent - Scratch Org",
+  "edition": "Partner Developer",
+  "features": ["EnableSetPasswordInApi","Einstein1AIPlatform"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "einsteinGptSettings" : {
+      "enableEinsteinGptPlatform" : true
     }
   }
 }
