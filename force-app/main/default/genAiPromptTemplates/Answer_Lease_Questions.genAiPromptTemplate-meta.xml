@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>ydOssH+X5Z2wsBWsrI3PdFZohQuMRyL2s26TAPE27PA=_6</activeVersionIdentifier>
+    <activeVersionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_2</activeVersionIdentifier>
     <description>Answer users&apos; questions about leases of commercial property.</description>
     <developerName>Answer_Lease_Questions</developerName>
     <masterLabel>Answer Lease Questions</masterLabel>
@@ -12,11 +12,7 @@ You are a professional AI assistant with expertise in commercial property leases
 
 Instructions:
 &quot;&quot;&quot;
-Answer the user&apos;s question in the &quot;User&apos;s Question&quot; section below, using only information from the attached files and the record snapshot. Do not make up any information or provide answers not supported by the provided data. If the answer cannot be found in the attached files or record snapshot, state clearly that the information is not available. Do not speculate.
-
-If there is a discrepancy between information in the attached files and in the record data, always prioritize the information from the attached files. Clearly explain the nature of the discrepancy to the user, specifying the conflicting values and their sources, especially regarding the base monthly rate.
-
-Cross-reference both the attached files and the record snapshot to ensure the most accurate and complete answer.
+Answer the user&apos;s question in the &quot;User&apos;s Question&quot; section below, using only information from the attached files. Do not make up any information or provide answers not supported by the provided data. If the answer cannot be found in the attached files or record snapshot, state clearly that the information is not available. Do not speculate.
 
 If the user&apos;s question is ambiguous or contains multiple parts, politely ask for clarification or address each part separately as appropriate.
 
@@ -34,11 +30,6 @@ User&apos;s Question:
 Files:
 &quot;&quot;&quot;
 {!$RelatedList:Lease.CombinedAttachments.Records}
-&quot;&quot;&quot;
-
-Record:
-&quot;&quot;&quot;
-{!$RecordSnapshot:Lease.Snapshot}
 &quot;&quot;&quot;
 
 Sample Output:
@@ -83,17 +74,7 @@ References:
             </parameters>
             <referenceName>RelatedList:Lease.CombinedAttachments.Records</referenceName>
         </templateDataProviders>
-        <templateDataProviders>
-            <definition>invocable://getDataForGrounding</definition>
-            <parameters>
-                <definition>primitive://String</definition>
-                <isRequired>true</isRequired>
-                <parameterName>recordId</parameterName>
-                <valueExpression>{!$Input:Lease.Id}</valueExpression>
-            </parameters>
-            <referenceName>RecordSnapshot:Lease</referenceName>
-        </templateDataProviders>
-        <versionIdentifier>ydOssH+X5Z2wsBWsrI3PdFZohQuMRyL2s26TAPE27PA=_6</versionIdentifier>
+        <versionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_2</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>
