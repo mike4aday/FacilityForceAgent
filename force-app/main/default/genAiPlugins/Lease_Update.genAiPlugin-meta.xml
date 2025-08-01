@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
     <canEscalate>false</canEscalate>
-    <description>Extracts and compares values from files attached to a Lease record with the corresponding fields in the Lease record.</description>
+    <description>Extracts and compares values from attached Lease files with corresponding fields in the Lease record to ensure data consistency and accuracy.</description>
     <developerName>Lease_Update</developerName>
     <genAiFunctions>
         <functionName>Upsert_Lease</functionName>
@@ -10,7 +10,7 @@
         <functionName>Extract_Lease_Values</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
-        <description>Extract data from files attached to a Lease record that correspond to record fields.</description>
+        <description>Extract data from files attached to a Lease record.</description>
         <developerName>instruction_extractdat0</developerName>
         <language>en_US</language>
         <masterLabel>instruction_extractdat0</masterLabel>
@@ -28,7 +28,7 @@
         <masterLabel>instruction_ifthereare2</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Verify that the user wants you to up date the lease record before you do.</description>
+        <description>Verify that the user wants you to up date the lease record before you do so.</description>
         <developerName>instruction_verifythat3</developerName>
         <language>en_US</language>
         <masterLabel>instruction_verifythat3</masterLabel>
@@ -36,5 +36,5 @@
     <language>en_US</language>
     <masterLabel>Lease Normalization</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is to extract values from files attached to a Lease record, compare them with the corresponding fields in the Lease record and, only if the user requests, update the record to match the extracted values.</scope>
+    <scope>Your job is to extract values from files attached to a Lease record, and to compare the extracted values with the corresponding fields in the Lease record. If the user requests it, update the Lease record to match the extracted values.</scope>
 </GenAiPlugin>

@@ -22,7 +22,7 @@
         <masterLabel>instruction_rememberth1</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
-    <masterLabel>Lease Inquiries</masterLabel>
+    <masterLabel>Lease Agreement Inquiries</masterLabel>
     <pluginType>Topic</pluginType>
     <scope>Your job is only to answer questions about a lease agreement or contract, based on files attached to the lease record. Do not address unrelated topics.</scope>
 </GenAiPlugin>
