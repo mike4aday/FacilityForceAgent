@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Automate common business tasks and assist users in their flow of work. Agentforce Employee Agent can search knowledge articles and other data sources. Customize it further to meet your employees’ business needs.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiCustomizedPlugin>
+            <aiPluginUtterances>
+                <developerName>utterance_shownewlea0</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>utterance_shownewlea0</masterLabel>
+                <utterance>Show new leads.</utterance>
+            </aiPluginUtterances>
+            <aiPluginUtterances>
+                <developerName>utterance_gettopamou1</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>utterance_gettopamou1</masterLabel>
+                <utterance>Get top amount opportunities.</utterance>
+            </aiPluginUtterances>
+            <canEscalate>false</canEscalate>
+            <description>Engages and interacts with the user about any request that could be CRM data related. This could be tasks such as identify and summarize records, answer queries, aggregate data, find and query objects, update records, or drafting and refining emails.</description>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__IdentifyObjectByName</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__QueryRecords</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__QueryRecordsWithAggregate</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__GetActivitiesTimeline</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__GetActivityDetails</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__GetRecordDetails</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__DraftOrReviseEmail</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__ExtractFieldsAndValuesFromUserInput</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+            </genAiFunctions>
+            <genAiPluginInstructions>
+                <description>There are multiple available data retrieval functions at your disposal. You can use each one of them multiple times if needed. You should use functions as many times as necessary until you have all the data required to fulfill the request of the user. You can perform extra calls if you think you can get additional relevant information.</description>
+                <developerName>instruction_therearemu0</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_therearemu0</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Do not declare your intent i.e. &quot;I will now retrieve the data&quot; - Just fetch the data.</description>
+                <developerName>instruction_donotdecla1</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_donotdecla1</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Identify the object type (i.e., leads, opportunities, accounts) the user asks about. If unclear, confirm with the user and make a suggestion based on the query context and history.</description>
+                <developerName>instruction_identifyth2</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_identifyth2</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When only the name of a record is mentioned in the user request, you MUST call the IdentifyRecordByName action to get the necessary IDs.</description>
+                <developerName>instruction_whenonlyth3</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_whenonlyth3</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Always call QueryRecords &amp; QueryRecordsWithAggregate passing plain natural language english as input. You must Include the record ID in the input if available.</description>
+                <developerName>instruction_alwayscall4</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_alwayscall4</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When a user asks for a summary or overview of a record, use GetRecordDetails to get an overview of the data of the record, then use other data retrieval actions as needed.</description>
+                <developerName>instruction_whenausera5</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_whenausera5</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When asked for a summary on multiple records, you must iterate over all record IDs and for each one call GetRecordDetails.</description>
+                <developerName>instruction_whenaskedf6</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_whenaskedf6</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>If the user asks about activities you must call GetActivitiesTimeline.</description>
+                <developerName>instruction_iftheusera7</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_iftheusera7</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When providing the Activity Types for GetActivitiesTimeline, choose all the types that are relevant to the user request. Examples - User Request 1 - &quot;What questions does John Doe have that need addressing?&quot;, Activity Types - &quot;Call&quot;, &quot;Email&quot;. User Request 2 - &quot;What are the next activities for John Doe?&quot;, Activity Types - &quot;Task&quot;, &quot;Event&quot;.</description>
+                <developerName>instruction_whenprovid8</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_whenprovid8</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When asked about recent activities, you should provide the answer, starting from the last 30 days and ending on the current date, unless a specific date range is specified by the user.</description>
+                <developerName>instruction_whenaskeda9</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_whenaskeda9</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When you are asked about a single Call, Meeting, Email or any other single specific activity, call GetActivityDetails. Do not call it for any other record type.</description>
+                <developerName>instruction_whenyouare10</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_whenyouare10</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Always use DraftOrReviseEmail when asked to generate a new email or revise a previously generated email.</description>
+                <developerName>instruction_alwaysused11</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_alwaysused11</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>ExtractRecordFieldsAndValuesFromUserInput must be called prior to UpdateRecordFields.</description>
+                <developerName>instruction_extractrec12</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_extractrec12</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Avoid using structured lists, bullet points, or numbered lists. Instead, present the information in complete sentences and paragraphs as if you were writing an article or a report.</description>
+                <developerName>instruction_avoidusing13</developerName>
+                <language xsi:nil="true"/>
+                <masterLabel>instruction_avoidusing13</masterLabel>
+            </genAiPluginInstructions>
+            <language>en_US</language>
+            <masterLabel>General CRM</masterLabel>
+            <name>GeneralCRM</name>
+            <pluginType>Topic</pluginType>
+            <scope>Your job is to interact and answer questions for the user about anything Salesforce or CRM data related, combining all data retrieval functions. i.e: QueryRecords(), GetRecordDetails(), GetActivitiesTimeline(), GetActivityDetails()</scope>
+        </genAiCustomizedPlugin>
+        <genAiPluginName>EmployeeCopilot__GeneralCRM</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>FacilityForce Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>
