@@ -145,6 +145,18 @@
         </genAiCustomizedPlugin>
         <genAiPluginName>EmployeeCopilot__GeneralCRM</genAiPluginName>
     </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Lease_Inquiries</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Lease_Management</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Lease_Update</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vendor_Selection</genAiPluginName>
+    </genAiPlugins>
     <masterLabel>FacilityForce Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlannerBundle>

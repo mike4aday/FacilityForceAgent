@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Select vendors who could provide various services at a particular property, including security, maintenance, cleaning, landscaping, plumbing, pest control and electrical services.</description>
+    <developerName>Vendor_Selection</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Query_Property_Vendors</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the user to identify the property in question if it&apos;s not clear.</description>
+        <developerName>instruction_asktheuser0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_asktheuser0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user is unsure about the required services, ask clarifying questions to better understand the user&apos;s needs.</description>
+        <developerName>instruction_iftheuseri1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuseri1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Vendor Selection</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to identify and suggest suitable vendors for the required services at a particular property. Do not handle other types of inquiries or services. Do not make up vendors. Suggest only vendors who are related to the property in question and which could provide the requested services.</scope>
+</GenAiPlugin>

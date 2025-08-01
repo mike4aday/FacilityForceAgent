@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates or updates a lease (Lease__c) record with the provided information. Property ID is required. Do not prompt the user for the Property ID (Property__c.Id) but instead prompt the user for the *name* of the property and then use the action &apos;IdentifyRecordByName&apos; to find the Property record.</description>
+    <invocationTarget>UpsertLeaseAction</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Upsert Lease</masterLabel>
+    <progressIndicatorMessage>Working on your lease...</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,104 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "annualCAMCharges" : {
+      "title" : "Annual CAM Charges",
+      "description" : "Annual Common Area Maintenance charges",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "annualInsurance" : {
+      "title" : "Annual Insurance",
+      "description" : "Annual insurance premium tenant pays",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "annualPropertyTaxes" : {
+      "title" : "Annual Property Taxes",
+      "description" : "Annual property tax amount tenant pays",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "endDate" : {
+      "title" : "End Date",
+      "description" : "Date when the lease term expires",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "leasedSquareFootage" : {
+      "title" : "Leased Square Footage",
+      "description" : "Total rentable square footage covered by this lease",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "leaseId" : {
+      "title" : "Lease ID",
+      "description" : "ID of existing lease record to update (leave blank to create new lease)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "monthlyBaseRent" : {
+      "title" : "Monthly Base Rent",
+      "description" : "Base monthly rental amount before additional charges",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "premises" : {
+      "title" : "Premises",
+      "description" : "Specific portion of the property (e.g., Suite 300, Floor 2)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "propertyId" : {
+      "title" : "Property ID",
+      "description" : "ID of the Property record (required for new leases)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "renewalNoticeDays" : {
+      "title" : "Renewal Notice Days",
+      "description" : "Number of days advance notice required for renewal",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "renewalOption" : {
+      "title" : "Renewal Option",
+      "description" : "Whether tenant has the right to renew this lease",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "startDate" : {
+      "title" : "Start Date",
+      "description" : "Date when the lease term begins",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "status" : {
+      "title" : "Status",
+      "description" : "Current status of the lease (Active, Pending Renewal, Expired, Terminated)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "structure" : {
+      "title" : "Lease Structure",
+      "description" : "Type of lease structure (e.g., Triple Net Lease (NNN), Gross Lease)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

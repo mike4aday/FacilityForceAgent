@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Answer users&apos; questions about leases of commercial property.</description>
+    <invocationTarget>Answer_Lease_Questions</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Answer Lease Questions</masterLabel>
+    <progressIndicatorMessage>Working...</progressIndicatorMessage>
+</GenAiFunction>

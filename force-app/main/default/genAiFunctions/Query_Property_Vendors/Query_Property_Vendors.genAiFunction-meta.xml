@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>FInd vendors who could help with an issue, problem or service request at a particular leased property.</description>
+    <invocationTarget>Query_Property_Vendors</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Query Property Vendors</masterLabel>
+    <progressIndicatorMessage>Finding vendors who could help...</progressIndicatorMessage>
+</GenAiFunction>

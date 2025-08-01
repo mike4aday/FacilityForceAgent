@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Extracts and compares values from files attached to a Lease record with the corresponding fields in the Lease record.</description>
+    <developerName>Lease_Update</developerName>
+    <genAiFunctions>
+        <functionName>Upsert_Lease</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Extract_Lease_Values</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Extract data from files attached to a Lease record that correspond to record fields.</description>
+        <developerName>instruction_extractdat0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_extractdat0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the attached files are missing necessary information, ask the user for clarification or additional details.</description>
+        <developerName>instruction_iftheattac1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheattac1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If there are no files attached to the Lease record, politely ask the user to attach a lease agreement file.</description>
+        <developerName>instruction_ifthereare2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifthereare2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Verify that the user wants you to up date the lease record before you do.</description>
+        <developerName>instruction_verifythat3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_verifythat3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Lease Normalization</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to extract values from files attached to a Lease record, compare them with the corresponding fields in the Lease record and, only if the user requests, update the record to match the extracted values.</scope>
+</GenAiPlugin>

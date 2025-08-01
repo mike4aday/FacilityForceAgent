@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles the updating of lease records (Lease__c) by modifying details such as lease name, lease start or end date, monthly rent, etc. based on user input. Specializes in locating and updating lease information without requiring the user to provide IDs. Ensures changes are confirmed with the user before proceeding.</description>
+    <developerName>Lease_Management</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Upsert_Lease</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Don&apos;t ask the user to provide the ID of a Lease (Lease__c) or Property (Property__c) record. Instead, prompt the user for the name, instead and search for the record by name.</description>
+        <developerName>instruction_dontaskthe0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_dontaskthe0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Gather as much information as possible from the user to locate the correct lease.</description>
+        <developerName>instruction_gatherasmu1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_gatherasmu1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If you cannot find the relevant lease, ask for additional details such as lease name or property name.</description>
+        <developerName>instruction_ifyoucanno2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifyoucanno2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user requests to update lease details, confirm the changes before proceeding.</description>
+        <developerName>instruction_iftheuserr3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserr3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer options to update lease details either by lease name or property name.</description>
+        <developerName>instruction_offeroptio4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_offeroptio4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When searching the database, include relevant keywords provided by the user to narrow down the search.</description>
+        <developerName>instruction_whensearch5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whensearch5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Lease Updates</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to update lease details as required.</scope>
+</GenAiPlugin>

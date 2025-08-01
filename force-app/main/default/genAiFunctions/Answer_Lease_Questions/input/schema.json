@@ -1,0 +1,31 @@
+{
+  "required" : [ "Input:Lease", "Input:Question" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Lease" : {
+      "title" : "Lease",
+      "description" : "The lease about which the user has a question.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Lease__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:Question" : {
+      "title" : "Question",
+      "description" : "Question from the user about a lease.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "outputLanguage" : {
+      "title" : "Prompt Operation output language",
+      "description" : "Select Prompt Operation output language",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,24 @@
+{
+  "required" : [ "Input:Issue", "Input:Property" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Issue" : {
+      "title" : "Issue",
+      "description" : "The user's problem, issue or service request.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:Property" : {
+      "title" : "Property",
+      "description" : "The related property.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Property__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

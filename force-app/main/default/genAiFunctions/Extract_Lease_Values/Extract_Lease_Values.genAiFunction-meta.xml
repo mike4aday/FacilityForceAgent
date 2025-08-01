@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Extract values for Lease (Lease__c) record fields from attached files.</description>
+    <invocationTarget>Extract_Lease_Values</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Extract Lease Values</masterLabel>
+    <progressIndicatorMessage>Analyzing files...</progressIndicatorMessage>
+</GenAiFunction>

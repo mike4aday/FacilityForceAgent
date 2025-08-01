@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>ydOssH+X5Z2wsBWsrI3PdFZohQuMRyL2s26TAPE27PA=_10</activeVersionIdentifier>
+    <description>Extract values for Lease (Lease__c) record fields from attached files.</description>
+    <developerName>Extract_Lease_Values</developerName>
+    <masterLabel>Extract Lease Values</masterLabel>
+    <templateVersions>
+        <content>Instructions:
+&quot;&quot;&quot;
+Analyze the attached files and extract values for the fields listed below. 
+
+Use only the values you find in the attached files.
+
+Return only a valid JSON object.
+
+If there are no attached files, then include this element in your JSON output: &quot;Error&quot;: &quot;No files are attached to this lease.&quot;
+
+If you can&apos;t find a particular field in the attached files, then set that field&apos;s value to null.
+
+If the rent varies over the term of the lease, use the starting rent.
+
+Include this element in your JSON output: &quot;Id&quot;: &quot;{!$Input:Lease.Id}&quot;
+&quot;&quot;&quot;
+
+Fields:
+&quot;&quot;&quot;
+* Premises within Property [Text up to 255 characters]
+* Leased Square Footage [Integer]
+* Lease Structure [One of these strings: Gross Lease (Full Service Lease), Single Net Lease (N), Double Net Lease (NN), Triple Net Lease (NNN), Modified Gross Lease, Percentage Lease, Ground Lease, Other]
+* Renewal Option [Yes or No]
+* Renewal Notice Days [Integer]
+* Lease Start Date [Date]
+* Lease End Date [Date]
+* Monthly Base Rent [Currency]
+* Rent Varies [Yes or No]
+* Annual CAM Charges [Currency]
+* Annual Insurance [Currency]
+* Annual Property Taxes [Currency]
+&quot;&quot;&quot;
+
+Attached Files:
+&quot;&quot;&quot;
+{!$RelatedList:Lease.CombinedAttachments.Records}
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Lease</apiName>
+            <definition>SOBJECT://Lease__c</definition>
+            <masterLabel>Lease</masterLabel>
+            <referenceName>Input:Lease</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Lease.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>CombinedAttachments</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Lease.CombinedAttachments.Records</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>ydOssH+X5Z2wsBWsrI3PdFZohQuMRyL2s26TAPE27PA=_10</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

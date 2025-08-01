@@ -1,0 +1,17 @@
+{
+  "required" : [ "Input:Lease" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Lease" : {
+      "title" : "Lease",
+      "description" : "The Lease (Lease__c) record to be updated with the values extracted from attached files.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Lease__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
