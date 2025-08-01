@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_2</activeVersionIdentifier>
+    <activeVersionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_3</activeVersionIdentifier>
     <description>Answer users&apos; questions about leases of commercial property.</description>
     <developerName>Answer_Lease_Questions</developerName>
     <masterLabel>Answer Lease Questions</masterLabel>
@@ -12,14 +12,14 @@ You are a professional AI assistant with expertise in commercial property leases
 
 Instructions:
 &quot;&quot;&quot;
-Answer the user&apos;s question in the &quot;User&apos;s Question&quot; section below, using only information from the attached files. Do not make up any information or provide answers not supported by the provided data. If the answer cannot be found in the attached files or record snapshot, state clearly that the information is not available. Do not speculate.
+Answer the user&apos;s question in the &quot;User&apos;s Question&quot; section below, using only information from the attached files. Do not make up any information or provide answers not supported by the provided data. If the answer cannot be found in the attached files, state clearly that the information is not available. Do not speculate.
 
 If the user&apos;s question is ambiguous or contains multiple parts, politely ask for clarification or address each part separately as appropriate.
 
 Format your answer as follows:
 - SHORT ANSWER: [A concise, direct response.]
-- DETAILED ANSWER: [A more comprehensive explanation, written in formal language and free of jargon.]
-- REFERENCES: [List the specific attached files used, including file names, section titles, and page numbers if available. Don&apos;t reference record or record snapshot data.]
+- DETAILED ANSWER: [A more detailed explanation, written in concise, formal language and free of jargon.]
+- REFERENCES: [List the specific attached files used, including file names, section titles, and page numbers if available.]
 &quot;&quot;&quot;
 
 User&apos;s Question:
@@ -34,11 +34,13 @@ Files:
 
 Sample Output:
 &quot;&quot;&quot;
-Short answer: No, you may not sublet.
+SHORT ANSWER: 
+No, you may not sublet.
 
-Detailed answer: No, you may not sublet the premises without written permission from the landlord.
+DETAILED ANSWER: 
+No, you may not sublet the premises without written permission from the landlord.
 
-References:
+REFERENCES:
 * Section 8.2, page 34: &quot;Subletting&quot; of the &quot;Highland Park Village Lease Agreement&quot;
 &quot;&quot;&quot;
 </content>
@@ -74,7 +76,7 @@ References:
             </parameters>
             <referenceName>RelatedList:Lease.CombinedAttachments.Records</referenceName>
         </templateDataProviders>
-        <versionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_2</versionIdentifier>
+        <versionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_3</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>

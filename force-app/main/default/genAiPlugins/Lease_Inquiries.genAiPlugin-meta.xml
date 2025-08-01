@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
     <canEscalate>false</canEscalate>
-    <description>Handles inquiries about the terms and conditions of retail property leases, including lease duration, rental rates, tenant obligations, property rules and policies, renewal options, etc.</description>
+    <description>Answers inquiries about lease agreements.</description>
     <developerName>Lease_Inquiries</developerName>
     <genAiFunctions>
         <functionName>Answer_Lease_Questions</functionName>
@@ -9,33 +9,20 @@
     <genAiFunctions>
         <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
     </genAiFunctions>
-    <genAiFunctions>
-        <functionName>EmployeeCopilot__QueryRecords</functionName>
-    </genAiFunctions>
-    <genAiPluginInstructions>
-        <description>Break your answer into 4 parts:
-1. A short answer with minimal text.
-2. A more detailed answer.
-3. References, such as the specific section or page of a document that support your answer and to which the user could refer for more information.
-4. Brief list of any discrepancies between the lease record data and information in the attached files.</description>
-        <developerName>instruction_breakyoura0</developerName>
-        <language>en_US</language>
-        <masterLabel>instruction_breakyoura0</masterLabel>
-    </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>Do not hallucinate or make up any information.</description>
-        <developerName>instruction_donothallu1</developerName>
+        <developerName>instruction_donothallu0</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_donothallu1</masterLabel>
+        <masterLabel>instruction_donothallu0</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Gather as much information as possible from the user by asking clarifying questions.</description>
-        <developerName>instruction_gatherasmu2</developerName>
+        <description>Remember that the Name field of the Lease__c record is an auto-number field of the form &quot;LEASE-0001&quot;.</description>
+        <developerName>instruction_rememberth1</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_gatherasmu2</masterLabel>
+        <masterLabel>instruction_rememberth1</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Lease Inquiries</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is only to answer questions about retail property leases, including terms, conditions, obligations and premises. Do not address unrelated topics. Do not make up information.</scope>
+    <scope>Your job is only to answer questions about a lease agreement or contract, based on files attached to the lease record. Do not address unrelated topics.</scope>
 </GenAiPlugin>
