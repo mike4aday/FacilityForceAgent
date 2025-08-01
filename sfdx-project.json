@@ -6,7 +6,7 @@
     }
   ],
   "name": "FacilityForceAgent",
-  "namespace": "",
+  "namespace": "facilityforce",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "64.0"
 }
