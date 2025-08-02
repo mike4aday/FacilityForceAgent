@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
     <canEscalate>false</canEscalate>
-    <description>Answers inquiries about lease agreements.</description>
+    <description>Provides answers to user questions about lease agreements, including terms, conditions, and policies. This topic is triggered ONLY by mentions of &apos;agreement,&apos; &apos;contract,&apos; &apos;terms,&apos; or &apos;policy.&apos;</description>
     <developerName>Lease_Inquiries</developerName>
     <genAiFunctions>
         <functionName>Answer_Lease_Questions</functionName>
@@ -16,7 +16,7 @@
         <masterLabel>instruction_donothallu0</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Remember that the Name field of the Lease__c record is an auto-number field of the form &quot;LEASE-0001&quot;.</description>
+        <description>Remember that the Name field of the Lease__c record is an auto-number field of the form &quot;LEASE-0001&quot;. The user may use a similar form to indicate the record name, e.g. &quot;lease 1&quot; or &quot;lease-1&quot;. This is not the record ID. Use the Name field and the IdentifyRecordByName() action to find the relevant Lease record.</description>
         <developerName>instruction_rememberth1</developerName>
         <language>en_US</language>
         <masterLabel>instruction_rememberth1</masterLabel>
@@ -24,5 +24,5 @@
     <language>en_US</language>
     <masterLabel>Lease Agreement Inquiries</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is only to answer questions about a lease agreement or contract, based on files attached to the lease record. Do not address unrelated topics.</scope>
+    <scope>Your job is only to answer a user&apos;s question about a lease agreement when the user mentions &apos;agreement,&apos; &apos;contract,&apos; &apos;terms&apos; or &apos;policy.&apos; Do not address unrelated topics.</scope>
 </GenAiPlugin>

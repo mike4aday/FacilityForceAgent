@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_3</activeVersionIdentifier>
+    <activeVersionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_5</activeVersionIdentifier>
     <description>Answer users&apos; questions about leases of commercial property.</description>
     <developerName>Answer_Lease_Questions</developerName>
     <masterLabel>Answer Lease Questions</masterLabel>
@@ -18,7 +18,7 @@ If the user&apos;s question is ambiguous or contains multiple parts, politely as
 
 Format your answer as follows:
 - SHORT ANSWER: [A concise, direct response.]
-- DETAILED ANSWER: [A more detailed explanation, written in concise, formal language and free of jargon.]
+- DETAILED ANSWER: [A more detailed explanation, up to 400 characters, written in concise, formal language and free of jargon.]
 - REFERENCES: [List the specific attached files used, including file names, section titles, and page numbers if available.]
 &quot;&quot;&quot;
 
@@ -76,7 +76,7 @@ REFERENCES:
             </parameters>
             <referenceName>RelatedList:Lease.CombinedAttachments.Records</referenceName>
         </templateDataProviders>
-        <versionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_3</versionIdentifier>
+        <versionIdentifier>kwikI1BgW576Cdt34CEbjb5vivmR2nKulJPE1VaIhTA=_5</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>
