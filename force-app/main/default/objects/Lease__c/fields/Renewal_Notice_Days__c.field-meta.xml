@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Notice_Days__c</fullName>
+    <description>Number of days advance notice required to exercise renewal option or notify of non-renewal. Critical for ensuring compliance with lease notification requirements.</description>
+    <externalId>false</externalId>
+    <label>Renewal Notice Days</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

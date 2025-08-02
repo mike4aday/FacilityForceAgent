@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monthly_Base_Rent_Per_Sq_Ft__c</fullName>
+    <description>Monthly base rent per square foot of leased space.</description>
+    <formula>Monthly_Base_Rent__c / Leased_Square_Footage__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Monthly base rent per square foot of leased space.</inlineHelpText>
+    <label>Monthly Base Rent Per Sq. Ft.</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Properties</fullName>
+    <columns>NAME</columns>
+    <columns>Property_Type__c</columns>
+    <columns>Total_Square_Footage__c</columns>
+    <columns>Street__c</columns>
+    <columns>City__c</columns>
+    <columns>State__c</columns>
+    <columns>Lessor__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Properties</label>
+</ListView>

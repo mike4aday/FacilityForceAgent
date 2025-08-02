@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Structure__c</fullName>
+    <description>Type of lease structure that determines financial responsibilities between tenant and landlord (e.g., Triple Net, Gross, Modified Gross). References the Lease Structure custom metadata type for detailed responsibility breakdown.</description>
+    <inlineHelpText>Type of lease structure that determines financial responsibilities between tenant and landlord (e.g., Triple Net, Gross, Modified Gross). References the Lease Structure custom metadata type for detailed responsibility breakdown.</inlineHelpText>
+    <label>Structure</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gross Lease (Full Service Lease)</fullName>
+                <default>false</default>
+                <label>Gross Lease (Full Service Lease)</label>
+            </value>
+            <value>
+                <fullName>Single Net Lease (N)</fullName>
+                <default>false</default>
+                <label>Single Net Lease (N)</label>
+            </value>
+            <value>
+                <fullName>Double Net Lease (NN)</fullName>
+                <default>false</default>
+                <label>Double Net Lease (NN)</label>
+            </value>
+            <value>
+                <fullName>Triple Net Lease (NNN)</fullName>
+                <default>false</default>
+                <label>Triple Net Lease (NNN)</label>
+            </value>
+            <value>
+                <fullName>Modified Gross Lease</fullName>
+                <default>false</default>
+                <label>Modified Gross Lease</label>
+            </value>
+            <value>
+                <fullName>Percentage Lease</fullName>
+                <default>false</default>
+                <label>Percentage Lease</label>
+            </value>
+            <value>
+                <fullName>Ground Lease</fullName>
+                <default>false</default>
+                <label>Ground Lease</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

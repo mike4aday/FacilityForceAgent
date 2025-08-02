@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Monthly_Expense__c</fullName>
+    <description>The monthly sum of CAM charges, insurance, property taxes and base rent.</description>
+    <formula>((Annual_CAM_Charges__c + Annual_Insurance__c + Annual_Property_Taxes__c) / 12) + Monthly_Base_Rent__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The monthly sum of CAM charges, insurance, property taxes and base rent.</inlineHelpText>
+    <label>Total Monthly Expense</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
