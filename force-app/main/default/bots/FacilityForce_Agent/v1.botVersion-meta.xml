@@ -6,13 +6,13 @@
         <botSteps>
             <botMessages>
                 <message>Hi, I’m Agentforce! I use AI to search trusted sources, and more. Ask me “What else can you do?” to see how I can simplify your workday. How can I help?</message>
-                <messageIdentifier>7d52729f-1ab1-4309-9739-182793cb7ea3</messageIdentifier>
+                <messageIdentifier>cbc14471-6616-484a-9c6e-5fb786534685</messageIdentifier>
             </botMessages>
-            <stepIdentifier>040ed3b5-6cdb-4810-8837-b13ddd85fd26</stepIdentifier>
+            <stepIdentifier>d382977c-d98a-4c60-90e2-feef781535e1</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>8181fa25-1d0b-44e2-ad04-7126b72f3140</stepIdentifier>
+            <stepIdentifier>09a50c23-6820-40db-9be1-14f58a49aa30</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -24,13 +24,13 @@
         <botSteps>
             <botMessages>
                 <message>Something went wrong. Try again.</message>
-                <messageIdentifier>debcc3fa-3764-4743-bed8-f555ac0e614f</messageIdentifier>
+                <messageIdentifier>ebd93044-422a-4bdd-94a2-29d076ce8175</messageIdentifier>
             </botMessages>
-            <stepIdentifier>d6db326e-f107-46d8-abfb-dcec9ca23606</stepIdentifier>
+            <stepIdentifier>acc215b2-d1c5-4709-8555-2fe4d93fabc5</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>2adc36a9-43dc-4b4f-9186-0c2b6db851b5</stepIdentifier>
+            <stepIdentifier>655b2b13-5e5d-4e24-8947-b35ba0efede2</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Error_Handling</developerName>
@@ -45,11 +45,11 @@
     </conversationDefinitionPlanners>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>This variable may also be referred to as VerifiedCustomerId</description>
-        <developerName>VerifiedCustomerId</developerName>
-        <includeInPrompt>false</includeInPrompt>
-        <label>VerifiedCustomerId</label>
-        <visibility>Internal</visibility>
+        <description>Salesforce Application Name.</description>
+        <developerName>currentAppName</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>currentAppName</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
@@ -61,10 +61,10 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>Salesforce Application Name.</description>
-        <developerName>currentAppName</developerName>
+        <description>Type of Salesforce Page.</description>
+        <developerName>currentPageType</developerName>
         <includeInPrompt>true</includeInPrompt>
-        <label>currentAppName</label>
+        <label>currentPageType</label>
         <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
@@ -77,11 +77,11 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>Type of Salesforce Page.</description>
-        <developerName>currentPageType</developerName>
-        <includeInPrompt>true</includeInPrompt>
-        <label>currentPageType</label>
-        <visibility>External</visibility>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
+        <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <entryDialog>Welcome</entryDialog>
     <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
