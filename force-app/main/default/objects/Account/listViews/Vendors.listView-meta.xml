@@ -6,6 +6,7 @@
     <columns>ACCOUNT.ADDRESS1_STATE</columns>
     <columns>ACCOUNT.PHONE1</columns>
     <columns>ACCOUNT.TYPE</columns>
+    <columns>SIC_DESC</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <filterScope>Mine</filterScope>
     <filters>
