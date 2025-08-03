@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Queries all Property_Vendor__c child records for a given property, along with related Account fields.</description>
+    <invocationTarget>Get_Property_Vendors</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get Property Vendors</masterLabel>
+    <progressIndicatorMessage>Getting vendor information...</progressIndicatorMessage>
+</GenAiFunction>

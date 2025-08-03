@@ -1,17 +1,17 @@
 {
-  "required" : [ "Input:Issue", "Input:Property" ],
+  "required" : [ "Input:Problem", "Input:Property" ],
   "unevaluatedProperties" : false,
   "properties" : {
-    "Input:Issue" : {
-      "title" : "Issue",
-      "description" : "The user's problem, issue or service request.",
+    "Input:Problem" : {
+      "title" : "Problem",
+      "description" : "User's description of a problem or request for service at a particular property.",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : false
     },
     "Input:Property" : {
       "title" : "Property",
-      "description" : "The related property.",
+      "description" : "Property__c record representing location of the user's problem or service request.",
       "lightning:type" : "lightning__recordInfoType",
       "lightning:sObjectInfo" : {
         "apiName" : "Property__c"

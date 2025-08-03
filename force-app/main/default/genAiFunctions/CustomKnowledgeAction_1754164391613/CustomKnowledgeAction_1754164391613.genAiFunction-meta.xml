@@ -5,6 +5,6 @@
     <invocationTargetType>standardInvocableAction</invocationTargetType>
     <isConfirmationRequired>false</isConfirmationRequired>
     <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
-    <masterLabel>CustomKnowledgeAction_1754063875656</masterLabel>
+    <masterLabel>CustomKnowledgeAction_1754164391613</masterLabel>
     <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
 </GenAiFunction>
