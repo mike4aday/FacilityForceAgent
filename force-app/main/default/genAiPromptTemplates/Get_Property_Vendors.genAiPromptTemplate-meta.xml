@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>hcUJkO3ru/Ck0eACf9Jx7Cb5vQ7B/fHKNYHH+kWTjdY=_1</activeVersionIdentifier>
     <developerName>Get_Property_Vendors</developerName>
     <masterLabel>Get Property Vendors</masterLabel>
     <templateVersions>
@@ -38,7 +39,7 @@ ACME ELECTRICAL SERVICES
     
 Vendors:
 &quot;&quot;&quot;
-
+{!$Apex:GetPropertyVendorsAction.Prompt}
 &quot;&quot;&quot;
 </content>
         <inputs>
@@ -56,7 +57,23 @@ Vendors:
             <required>true</required>
         </inputs>
         <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
-        <status>Draft</status>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://GetPropertyVendorsAction</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Problem</parameterName>
+                <valueExpression>{!$Input:Problem}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>SOBJECT://Property__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Property</parameterName>
+                <valueExpression>{!$Input:Property}</valueExpression>
+            </parameters>
+            <referenceName>Apex:GetPropertyVendorsAction</referenceName>
+        </templateDataProviders>
         <versionIdentifier>hcUJkO3ru/Ck0eACf9Jx7Cb5vQ7B/fHKNYHH+kWTjdY=_1</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
