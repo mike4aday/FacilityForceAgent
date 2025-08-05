@@ -7,7 +7,7 @@
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
             <value>
                 <fullName>Cleaning</fullName>
                 <default>false</default>
@@ -57,6 +57,11 @@
                 <fullName>Pest Control</fullName>
                 <default>false</default>
                 <label>Pest Control</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
             </value>
             <value>
                 <fullName>Property Management</fullName>
