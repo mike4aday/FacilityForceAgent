@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
     <canEscalate>false</canEscalate>
-    <description>Extracts and compares values from attached Lease files with corresponding fields in the Lease record to ensure data consistency and accuracy.</description>
+    <description>Extracts values from files attached to a Lease__c record and compares them with corresponding fields in the Lease__c record to ensure data consistency and accuracy.</description>
     <developerName>Lease_Update</developerName>
     <genAiFunctions>
         <functionName>Upsert_Lease</functionName>
@@ -34,7 +34,7 @@
         <masterLabel>instruction_verifythat3</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
-    <masterLabel>Lease Normalization</masterLabel>
+    <masterLabel>Lease Agreement Extraction</masterLabel>
     <pluginType>Topic</pluginType>
     <scope>Your job is to extract values from files attached to a Lease record, and to compare the extracted values with the corresponding fields in the Lease record. If the user requests it, update the Lease record to match the extracted values.</scope>
 </GenAiPlugin>
