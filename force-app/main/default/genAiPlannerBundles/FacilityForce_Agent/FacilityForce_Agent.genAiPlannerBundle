@@ -5,18 +5,6 @@
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
     <genAiPlugins>
-        <genAiPluginName>Lease_Inquiries</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Lease_Management</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Lease_Update</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Vendor_Selection</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
         <genAiCustomizedPlugin>
             <aiPluginUtterances>
                 <developerName>utterance_shownewlea0</developerName>
@@ -156,6 +144,15 @@
             <scope>Your job is to interact and answer questions for the user about anything Salesforce or CRM data related, combining all data retrieval functions. i.e: QueryRecords(), GetRecordDetails(), GetActivitiesTimeline(), GetActivityDetails()</scope>
         </genAiCustomizedPlugin>
         <genAiPluginName>EmployeeCopilot__GeneralCRM</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Lease_Inquiries</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Lease_Update</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Service_Provider_Recommendations</genAiPluginName>
     </genAiPlugins>
     <masterLabel>FacilityForce Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
