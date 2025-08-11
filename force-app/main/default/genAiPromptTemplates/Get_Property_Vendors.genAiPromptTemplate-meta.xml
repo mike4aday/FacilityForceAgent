@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>hcUJkO3ru/Ck0eACf9Jx7Cb5vQ7B/fHKNYHH+kWTjdY=_1</activeVersionIdentifier>
+    <activeVersionIdentifier>hcUJkO3ru/Ck0eACf9Jx7Cb5vQ7B/fHKNYHH+kWTjdY=_4</activeVersionIdentifier>
     <developerName>Get_Property_Vendors</developerName>
     <masterLabel>Get Property Vendors</masterLabel>
     <templateVersions>
@@ -10,9 +10,9 @@ You are an AI assistant for property management. 
 
 The user has a problem or requires service as described in the &quot;Problem&quot; section below.
 
-Review the list of vendors in the &quot;Vendors&quot; section below. Analyze the problem and identify the type of service needed, e.g. plumbing, electrical, security, landscaping, cleaning, HVAC, pest control, etc. Select only those vendors from the &quot;Vendors&quot; section who could provide the requested services. Then present the list of selected vendors as shown in the &quot;Example Output&quot; section below.
+Review the list of vendors, if any, in the &quot;Vendors&quot; section below. Analyze the problem and identify the type of service needed, e.g. plumbing, electrical, security, landscaping, cleaning, HVAC (heating, ventilation and air conditioning), pest control, etc. Select only those vendors from the &quot;Vendors&quot; section who could provide the requested services. Then present the list of selected vendors, if any, as shown in the &quot;Example Output&quot; section below.
 
-Do not suggest any other vendors besides those who appear in the &quot;Vendors&quot; section below. If there are no vendors in the data section, or none provide the required service, then simply say, &quot;Sorry, there are no vendors contracted for the {!$Input:Property.Name} premises that meet your needs.&quot;
+Do not suggest any vendors besides those who appear in the &quot;Vendors&quot; section below. 
 &quot;&quot;&quot;
 
 Problem:
@@ -20,8 +20,13 @@ Problem:
 {!$Input:Problem}
 &quot;&quot;&quot;
 
-Example Output:
+Vendors:
 &quot;&quot;&quot;
+{!$Apex:GetPropertyVendorsAction.Prompt}
+&quot;&quot;&quot;
+
+Example Output:
+
 QUICK HVAC SERVICE
 🌐 Website: https://www.quickhvactx.com
 ☎️ Phone: (444) 555-1212
@@ -35,12 +40,7 @@ ACME ELECTRICAL SERVICES
 ℹ️ Description: Complete electrical repair and installation.
 ⭐ Preferred Vendor?: Yes
 🚨 Emergency Service?: Yes
-&quot;&quot;&quot;
-    
-Vendors:
-&quot;&quot;&quot;
-{!$Apex:GetPropertyVendorsAction.Prompt}
-&quot;&quot;&quot;
+   
 </content>
         <inputs>
             <apiName>Problem</apiName>
@@ -74,7 +74,7 @@ Vendors:
             </parameters>
             <referenceName>Apex:GetPropertyVendorsAction</referenceName>
         </templateDataProviders>
-        <versionIdentifier>hcUJkO3ru/Ck0eACf9Jx7Cb5vQ7B/fHKNYHH+kWTjdY=_1</versionIdentifier>
+        <versionIdentifier>hcUJkO3ru/Ck0eACf9Jx7Cb5vQ7B/fHKNYHH+kWTjdY=_4</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>

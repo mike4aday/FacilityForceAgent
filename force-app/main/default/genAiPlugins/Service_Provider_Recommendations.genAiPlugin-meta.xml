@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Classifies and handles requests for recommending service providers related to a user&apos;s property needs or issues.</description>
+    <developerName>Service_Provider_Recommendations</developerName>
+    <genAiFunctions>
+        <functionName>Get_Property_Vendors</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Current_User_Property</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Use the property details to match appropriate service providers.</description>
+        <developerName>instruction_0_1754789916099</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0_1754789916099</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If no service provider is suitable, tell the user you can&apos;t suggest any providers.</description>
+        <developerName>instruction_1_1754789916106</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1_1754789916106</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user did not provide a property name, try to find the Property__c record associated with the user by executing the GetCurrentUserProperty() action. Confirm the property with the user. If that action doesn&apos;t return a value, ask the user to provide the name of the property. Don&apos;t ask the user for a record ID.</description>
+        <developerName>instructions_0_1754879928607</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_0_1754879928607</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user provided a property name, use the IdentifyRecordByName() action to identify the relevant Property__c record. Don&apos;t ask the user for a record ID.</description>
+        <developerName>instructions_1_1754879928613</developerName>
+        <language>en_US</language>
+        <masterLabel>instructions_1_1754879928613</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Service Provider Recommendations</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to recommend suitable service providers based on the user&apos;s property-related requests or problems. You will not handle unrelated inquiries, nor suggest vendors unrelated to the property, nor provide recommendations outside the context of property services.</scope>
+</GenAiPlugin>
