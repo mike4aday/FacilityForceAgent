@@ -4,7 +4,7 @@ FacilityForce is a complete, sample Agentforce application. This application dem
 
 ## The Power of FacilityForce
 
-FacilityForce addresses critical pain points in facility management, delivering substantial time savings and improved efficiency:
+FacilityForce addresses critical pain points in property management, delivering substantial time savings and improved efficiency:
 
 *   **Document Inquiries**: FacilityForce can quickly locate and cite specific information within lengthy PDF lease agreements and policy manuals. This capability drastically reduces the time spent on manual document review.
 *   **Automated Data Entry**: The application automates the extraction of key data from PDF documents and seamlessly updates Salesforce records. This eliminates tedious manual data entry.
