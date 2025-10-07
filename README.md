@@ -26,7 +26,7 @@ Essentially, any process involving the review of documents, data extraction, and
 
 FacilityForce leverages the following key Agentforce technologies to deliver its powerful capabilities:
 
-*   **Salesforce's Agent Force Platform**: The foundational platform that provides the framework for building and deploying AI agents.
+*   **Agentforce Platform**: The foundational platform that provides the framework for building and deploying AI agents.
 *   **File Inputs in Prompt Templates**: This feature allows the application to effectively process and extract information from attached files, such as PDF lease agreements, by integrating them directly into AI prompt templates. This approach proved to be highly effective and simpler to implement for file-based interactions compared to data cloud retrievers.
 *   **Grounding with Apex**: Apex classes retrieve data to ground the prompt templates with relevant and current data.
 *   **Slack Integration**: Enables seamless interaction with the AI agent directly within the Slack messaging platform, facilitating quick and efficient service request resolution.
