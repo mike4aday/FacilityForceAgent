@@ -1,18 +1,32 @@
-# Salesforce DX Project: Next Steps
+# FacilityForce: Intelligent Real Estate Management Powered by Agentforce
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+FacilityForce is a complete, sample Agentforce application. This application demonstrates the transformative potential of AI in streamlining complex, time-consuming tasks within the real estate domain, but the Agentforce features are relevant to many other use cases.
 
-## How Do You Plan to Deploy Your Changes?
+## The Power of FacilityForce
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+FacilityForce addresses critical pain points in facility management, delivering substantial time savings and improved efficiency:
 
-## Configure Your Salesforce DX Project
+*   **Document Inquiries**: FacilityForce can quickly locate and cite specific information within lengthy PDF lease agreements and policy manuals. This capability drastically reduces the time spent on manual document review.
+*   **Automated Data Entry**: The application automates the extraction of key data from PDF documents and seamlessly updates Salesforce records. This eliminates tedious manual data entry.
+*   **Streamlined Service Request Resolution**: Employees can efficiently resolve service requests directly through Slack. By simply describing an issue, they receive intelligent recommendations for appropriate vendors, saving real estate directors time previously dedicated to urgent service requests. FacilityForce intelligently assesses the problem and connects employees with the right resources, fostering independent problem-solving.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Applicability to Other Use Cases
 
-## Read All About It
+The core functionalities demonstrated by FacilityForce are highly adaptable and can be applied to a wide range of other business use cases across various industries:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+*   **Contract Management**: Automating the extraction of clauses, terms, and conditions from legal contracts, and updating relevant systems.
+*   **Customer Support**: Enhancing self-service options by allowing customers to quickly find answers within product manuals or service agreements.
+*   **HR Onboarding**: Streamlining the processing of new hire documents, extracting essential information, and updating employee records.
+*   **Financial Services**: Automating data extraction from financial statements, loan applications, or regulatory documents.
+*   **Healthcare**: Efficiently managing patient records, insurance claims, and medical documentation.
+
+Essentially, any process involving the review of documents, data extraction, and intelligent routing of requests can benefit from the principles and technologies showcased in FacilityForce.
+
+## Agentforce Technologies Used
+
+FacilityForce leverages the following key Agentforce technologies to deliver its powerful capabilities:
+
+*   **Salesforce's Agent Force Platform**: The foundational platform that provides the framework for building and deploying AI agents.
+*   **File Inputs in Prompt Templates**: This feature allows the application to effectively process and extract information from attached files, such as PDF lease agreements, by integrating them directly into AI prompt templates. This approach proved to be highly effective and simpler to implement for file-based interactions compared to data cloud retrievers.
+*   **Grounding with Apex**: Apex classes retrieve data to ground the prompt templates with relevant and current data.
+*   **Slack Integration**: Enables seamless interaction with the AI agent directly within the Slack messaging platform, facilitating quick and efficient service request resolution.
